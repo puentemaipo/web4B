@@ -1,0 +1,23 @@
+{
+  "name": "web4b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puentemaipo/web4B.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/puentemaipo/web4B/issues"
+  },
+  "homepage": "https://github.com/puentemaipo/web4B#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
