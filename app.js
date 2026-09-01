@@ -1,17 +1,33 @@
-import express from 'express'
+const express = require('express');
 
-const app = express()
+const app = express();
+
+const PORT = 3000;
+
+
+// Configurar EJS
+app.set('view engine', 'ejs');
 
 // RUTAS
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World!!|||@@@</h1>')
-})
-
-app.get('/servicios', (req, res) => {
-    res.send('Servicios');
+  res.render('index');
 });
 
-// LEVANTAR SERVIDOR
-app.listen(3000, () => {
-  console.log('Server is running on http://localhost:3000')
-})
+app.get('/servicios', (req, res) => {
+  res.render('servicios');
+});
+
+app.get('/nosotros', (req, res) => {
+  res.render('nosotros');
+});
+
+app.get('/contacto', (req, res) => {
+  res.render('contacto');
+});
+
+
+
+
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+});
